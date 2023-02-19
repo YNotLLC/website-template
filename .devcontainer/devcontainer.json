@@ -1,0 +1,25 @@
+{
+  "name": "website-template",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.semi": false,
+        "prettier.singleQuote": true
+      },
+      "extensitons": [
+        "esbenp.prettier-vscode",
+        "ms-ceintl.vscode-language-pack-ja",
+        "dsznajder.es7-react-js-snippets",
+        "foxundermoon.next-js",
+        "pulkitgangwar.nextjs-snippets"
+      ]
+    }
+  },
+  "postCreateCommand": "apt-get update && apt-get install -y git"
+}

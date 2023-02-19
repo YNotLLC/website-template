@@ -1,5 +1,9 @@
 # Web 制作用テンプレート（Next.js - Micro CMS）
 
+参考
+
+https://blog.microcms.io/microcms-next-jamstack-blog/
+
 ## 新サイトの立ち上げ方
 
 1. クローンする
@@ -20,7 +24,7 @@ git push --mirror git@github.com:YNotLLC/[new-project].git
 
 5. .env.example を、.env.local に変更する
 
-6. MICRO CMS から、サービスドメインと、API キーを取得（API キーの扱いは気を付ける）
+6. Micro CMS から、サービスドメインと、API キーを取得（API キーの扱いは気を付ける）
 
 7. .env.local に 3 で取得したデータを貼り付ける
 

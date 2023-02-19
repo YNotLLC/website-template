@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Web 制作用テンプレート（Next.js - Micro CMS）
 
-## Getting Started
+## 新サイトの立ち上げ方
 
-First, run the development server:
+1. クローンする
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+```
+git clone git@github.com:YNotLLC/website-template.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. GitHub にて、新リポジトリを作成
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+3. ミラープッシュする
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```
+git push --mirror git@github.com:YNotLLC/[new-project].git
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+4. 新リポジトリからクローンする
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+5. .env.example を、.env.local に変更する
 
-## Learn More
+6. MICRO CMS から、サービスドメインと、API キーを取得（API キーの扱いは気を付ける）
 
-To learn more about Next.js, take a look at the following resources:
+7. .env.local に 3 で取得したデータを貼り付ける
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+8. .devcontainer/devcontainer.json を編集
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+"name": "website-template" ←プロジェクト名に変更
+```
 
-## Deploy on Vercel
+9. docker-compose.yml を編集
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+container_name: website-template  ←プロジェクト名に変更
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+10. vscode 左下の、><マークをクリック、Reopen in Container を選択
+
+11. VSCode 上のターミナルでコマンド実行
+
+```
+npm i
+```
+
+```
+npm run dev
+```
+
+12. ブラウザでアクセス
+
+http://localhost:3000

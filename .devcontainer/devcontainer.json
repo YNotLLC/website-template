@@ -10,14 +10,15 @@
         "editor.tabSize": 2,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "prettier.semi": false,
-        "prettier.singleQuote": true
+        "prettier.singleQuote": true,
+        "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+        }
       },
-      "extensitons": [
+      "extensions": [
         "esbenp.prettier-vscode",
         "ms-ceintl.vscode-language-pack-ja",
-        "dsznajder.es7-react-js-snippets",
-        "foxundermoon.next-js",
-        "pulkitgangwar.nextjs-snippets"
+        "bradlc.vscode-tailwindcss"
       ]
     }
   },

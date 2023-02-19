@@ -1,6 +1,7 @@
+import { Layout } from '@/components/Layout'
 import Head from 'next/head'
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -9,11 +10,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Layout>
         <h1 className="text-3xl font-bold underline text-gray-200">
           Hello JamStack Website!
         </h1>
-      </main>
+      </Layout>
     </>
   )
 }
+
+export default Home

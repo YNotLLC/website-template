@@ -55,3 +55,35 @@ npm run dev
 12. ブラウザでアクセス
 
 http://localhost:3000
+
+## コーディングの進め方
+
+### ページを作るとき
+
+1. スニペットを呼び出す
+
+```
+nafe
+```
+
+2. コンポーネント名の 1 文字目を大文字に変更
+
+```
+const test = () => { ←testから、Testに変更
+  return (
+    <div>
+      Enter
+    </div>
+  );
+}
+
+export default test; ←testから、Testに変更
+```
+
+### コンポーネントを作るとき
+
+1. スニペットを呼び出す
+
+```
+rafc
+```

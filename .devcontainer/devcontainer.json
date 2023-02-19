@@ -18,7 +18,9 @@
       "extensions": [
         "esbenp.prettier-vscode",
         "ms-ceintl.vscode-language-pack-ja",
-        "bradlc.vscode-tailwindcss"
+        "bradlc.vscode-tailwindcss",
+        "pulkitgangwar.nextjs-snippets",
+        "dsznajder.es7-react-js-snippets"
       ]
     }
   },
